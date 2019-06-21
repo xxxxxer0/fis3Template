@@ -1,0 +1,64 @@
+@charset "UTF-8";
+$yahei: "Microsoft YaHei";
+$pingfan:PingFangSC-Regular;
+
+/*通用变量*/
+
+$baseFontSize:14px;
+$baseFontColor:#999;
+$mainColor: #35ffd5;
+/*基础样式*/
+
+@import "base/mBase";
+@import "base/mMixins";
+
+
+
+html {
+    font-size: 14px;
+    height: 100%; // overflow-y: scroll;
+    font: 14px/1.5 PingFang sc,$yahei, "Helvetica Neue", Helvetica, Tahoma, Arial, SimSun, TW-Sung, "WenQuanYi Bitmap Song", "AR PL UMing CN", "AR PL UMing HK", "AR PL UMing TW", "AR PL UMing TW MBE", serif; // font-family: $yahei;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+}
+
+body {
+    // min-width: 1140px;
+    // background: #070813;
+    a {
+        text-decoration: none;
+        &:hover {
+            text-decoration: none;
+        }
+    }
+    p,
+    a,
+    span,
+    em,
+    i,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        text-rendering: optimizeLegibility;
+        -webkit-font-smoothing: antialiased;
+    }
+}
+
+
+
+
+a {
+    text-decoration: none;
+    &.g-link {
+        position: relative;
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+
+
